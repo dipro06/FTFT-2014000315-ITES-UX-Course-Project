@@ -585,9 +585,11 @@ body > section {
   transition: 300ms;
 }
 #pricing-table .plan li.plan-name {
-  font-size: 24px;
-  line-height: 24px;
-  color: #fff;
+   background: none repeat scroll 0 0 #000;
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: -50px;
 }
 #pricing-table .plan li.plan-name h3 {
   margin: 0;
@@ -597,12 +599,13 @@ body > section {
 }
 #pricing-table .plan li.plan-price > div {
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.2);
+  margin-top:-5px;
+  /*background-color: rgba(0, 0, 0, 0.2);
   padding: 10px;
   font-size: 24px;
   border-radius: 100%;
   width: 70px;
-  height: 70px;
+  height: 70px;*/
 }
 #pricing-table .plan li.plan-price > div sup {
   font-size: 10px;
@@ -1127,3 +1130,16 @@ COUSTOME CSSS
   background: linear-gradient(red, orange); 
   cursor:pointer;
   }
+  .plan-name h3{
+	  text-align:center;
+   -webkit-text-stroke: 1px black;
+   color: red;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.plan-price img{width:262px; height:150px; margin-right:20px;}
